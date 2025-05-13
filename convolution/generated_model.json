@@ -1,0 +1,6957 @@
+{
+    "variables": {
+        "size": {
+            "type": "usize"
+        },
+        "sum_size": {
+            "type": "usize"
+        },
+        "W_size": {
+            "type": "usize"
+        },
+        "S0_size": {
+            "type": "usize"
+        },
+        "S1_size": {
+            "type": "usize"
+        },
+        "X_size": {
+            "type": "usize"
+        },
+        "X1_size": {
+            "type": "usize"
+        },
+        "X2_size": {
+            "type": "usize"
+        },
+        "Fs": {
+            "type": "i32"
+        },
+        "L": {
+            "type": "i32"
+        },
+        "M": {
+            "type": "i32"
+        },
+        "p": {
+            "type": "i32"
+        },
+        "S_0": {
+            "type": "pointer"
+        },
+        "S_1": {
+            "type": "pointer"
+        },
+        "a": {
+            "type": "i32"
+        },
+        "b": {
+            "type": "i32"
+        },
+        "A": {
+            "type": "f32"
+        },
+        "X": {
+            "type": "pointer"
+        },
+        "X1": {
+            "type": "pointer"
+        },
+        "X2": {
+            "type": "pointer"
+        },
+        "W": {
+            "type": "pointer"
+        },
+        "B": {
+            "type": "pointer"
+        },
+        "C": {
+            "type": "pointer"
+        },
+        "X2PC": {
+            "type": "pointer"
+        },
+        "X_raw": {
+            "type": "pointer"
+        },
+        "opora": {
+            "type": "pointer"
+        },
+        "N": {
+            "type": "i32"
+        },
+        "meta": {
+            "type": "pointer"
+        },
+        "meta_size": {
+            "type": "usize"
+        },
+        "X_raw_0": {
+            "type": "pointer"
+        },
+        "X_raw_0_size": {
+            "type": "usize"
+        },
+        "X_0": {
+            "type": "pointer"
+        },
+        "X_0_size": {
+            "type": "usize"
+        },
+        "X_raw_1": {
+            "type": "pointer"
+        },
+        "X_raw_1_size": {
+            "type": "usize"
+        },
+        "X_1": {
+            "type": "pointer"
+        },
+        "X_1_size": {
+            "type": "usize"
+        },
+        "X_raw_2": {
+            "type": "pointer"
+        },
+        "X_raw_2_size": {
+            "type": "usize"
+        },
+        "X_2": {
+            "type": "pointer"
+        },
+        "X_2_size": {
+            "type": "usize"
+        },
+        "X_raw_3": {
+            "type": "pointer"
+        },
+        "X_raw_3_size": {
+            "type": "usize"
+        },
+        "X_3": {
+            "type": "pointer"
+        },
+        "X_3_size": {
+            "type": "usize"
+        },
+        "X_raw_4": {
+            "type": "pointer"
+        },
+        "X_raw_4_size": {
+            "type": "usize"
+        },
+        "X_4": {
+            "type": "pointer"
+        },
+        "X_4_size": {
+            "type": "usize"
+        },
+        "X_raw_5": {
+            "type": "pointer"
+        },
+        "X_raw_5_size": {
+            "type": "usize"
+        },
+        "X_5": {
+            "type": "pointer"
+        },
+        "X_5_size": {
+            "type": "usize"
+        },
+        "X_raw_6": {
+            "type": "pointer"
+        },
+        "X_raw_6_size": {
+            "type": "usize"
+        },
+        "X_6": {
+            "type": "pointer"
+        },
+        "X_6_size": {
+            "type": "usize"
+        },
+        "X_raw_7": {
+            "type": "pointer"
+        },
+        "X_raw_7_size": {
+            "type": "usize"
+        },
+        "X_7": {
+            "type": "pointer"
+        },
+        "X_7_size": {
+            "type": "usize"
+        },
+        "X_raw_8": {
+            "type": "pointer"
+        },
+        "X_raw_8_size": {
+            "type": "usize"
+        },
+        "X_8": {
+            "type": "pointer"
+        },
+        "X_8_size": {
+            "type": "usize"
+        },
+        "X_raw_9": {
+            "type": "pointer"
+        },
+        "X_raw_9_size": {
+            "type": "usize"
+        },
+        "X_9": {
+            "type": "pointer"
+        },
+        "X_9_size": {
+            "type": "usize"
+        },
+        "X_raw_10": {
+            "type": "pointer"
+        },
+        "X_raw_10_size": {
+            "type": "usize"
+        },
+        "X_10": {
+            "type": "pointer"
+        },
+        "X_10_size": {
+            "type": "usize"
+        },
+        "X_raw_11": {
+            "type": "pointer"
+        },
+        "X_raw_11_size": {
+            "type": "usize"
+        },
+        "X_11": {
+            "type": "pointer"
+        },
+        "X_11_size": {
+            "type": "usize"
+        },
+        "X_raw_12": {
+            "type": "pointer"
+        },
+        "X_raw_12_size": {
+            "type": "usize"
+        },
+        "X_12": {
+            "type": "pointer"
+        },
+        "X_12_size": {
+            "type": "usize"
+        },
+        "X_raw_13": {
+            "type": "pointer"
+        },
+        "X_raw_13_size": {
+            "type": "usize"
+        },
+        "X_13": {
+            "type": "pointer"
+        },
+        "X_13_size": {
+            "type": "usize"
+        },
+        "X_raw_14": {
+            "type": "pointer"
+        },
+        "X_raw_14_size": {
+            "type": "usize"
+        },
+        "X_14": {
+            "type": "pointer"
+        },
+        "X_14_size": {
+            "type": "usize"
+        },
+        "X_raw_15": {
+            "type": "pointer"
+        },
+        "X_raw_15_size": {
+            "type": "usize"
+        },
+        "X_15": {
+            "type": "pointer"
+        },
+        "X_15_size": {
+            "type": "usize"
+        },
+        "X_raw_16": {
+            "type": "pointer"
+        },
+        "X_raw_16_size": {
+            "type": "usize"
+        },
+        "X_16": {
+            "type": "pointer"
+        },
+        "X_16_size": {
+            "type": "usize"
+        },
+        "X_raw_17": {
+            "type": "pointer"
+        },
+        "X_raw_17_size": {
+            "type": "usize"
+        },
+        "X_17": {
+            "type": "pointer"
+        },
+        "X_17_size": {
+            "type": "usize"
+        },
+        "X_raw_18": {
+            "type": "pointer"
+        },
+        "X_raw_18_size": {
+            "type": "usize"
+        },
+        "X_18": {
+            "type": "pointer"
+        },
+        "X_18_size": {
+            "type": "usize"
+        },
+        "X_raw_19": {
+            "type": "pointer"
+        },
+        "X_raw_19_size": {
+            "type": "usize"
+        },
+        "X_19": {
+            "type": "pointer"
+        },
+        "X_19_size": {
+            "type": "usize"
+        },
+        "X_raw_20": {
+            "type": "pointer"
+        },
+        "X_raw_20_size": {
+            "type": "usize"
+        },
+        "X_20": {
+            "type": "pointer"
+        },
+        "X_20_size": {
+            "type": "usize"
+        },
+        "X_raw_21": {
+            "type": "pointer"
+        },
+        "X_raw_21_size": {
+            "type": "usize"
+        },
+        "X_21": {
+            "type": "pointer"
+        },
+        "X_21_size": {
+            "type": "usize"
+        },
+        "X_raw_22": {
+            "type": "pointer"
+        },
+        "X_raw_22_size": {
+            "type": "usize"
+        },
+        "X_22": {
+            "type": "pointer"
+        },
+        "X_22_size": {
+            "type": "usize"
+        },
+        "X_raw_23": {
+            "type": "pointer"
+        },
+        "X_raw_23_size": {
+            "type": "usize"
+        },
+        "X_23": {
+            "type": "pointer"
+        },
+        "X_23_size": {
+            "type": "usize"
+        },
+        "X_raw_24": {
+            "type": "pointer"
+        },
+        "X_raw_24_size": {
+            "type": "usize"
+        },
+        "X_24": {
+            "type": "pointer"
+        },
+        "X_24_size": {
+            "type": "usize"
+        },
+        "X_raw_25": {
+            "type": "pointer"
+        },
+        "X_raw_25_size": {
+            "type": "usize"
+        },
+        "X_25": {
+            "type": "pointer"
+        },
+        "X_25_size": {
+            "type": "usize"
+        },
+        "X_raw_26": {
+            "type": "pointer"
+        },
+        "X_raw_26_size": {
+            "type": "usize"
+        },
+        "X_26": {
+            "type": "pointer"
+        },
+        "X_26_size": {
+            "type": "usize"
+        },
+        "X_raw_27": {
+            "type": "pointer"
+        },
+        "X_raw_27_size": {
+            "type": "usize"
+        },
+        "X_27": {
+            "type": "pointer"
+        },
+        "X_27_size": {
+            "type": "usize"
+        },
+        "X1_0": {
+            "type": "pointer"
+        },
+        "X1_0_size": {
+            "type": "usize"
+        },
+        "X1_1": {
+            "type": "pointer"
+        },
+        "X1_1_size": {
+            "type": "usize"
+        },
+        "X1_2": {
+            "type": "pointer"
+        },
+        "X1_2_size": {
+            "type": "usize"
+        },
+        "X1_3": {
+            "type": "pointer"
+        },
+        "X1_3_size": {
+            "type": "usize"
+        },
+        "X1_4": {
+            "type": "pointer"
+        },
+        "X1_4_size": {
+            "type": "usize"
+        },
+        "X1_5": {
+            "type": "pointer"
+        },
+        "X1_5_size": {
+            "type": "usize"
+        },
+        "X1_6": {
+            "type": "pointer"
+        },
+        "X1_6_size": {
+            "type": "usize"
+        },
+        "X1_7": {
+            "type": "pointer"
+        },
+        "X1_7_size": {
+            "type": "usize"
+        },
+        "X1_8": {
+            "type": "pointer"
+        },
+        "X1_8_size": {
+            "type": "usize"
+        },
+        "X1_9": {
+            "type": "pointer"
+        },
+        "X1_9_size": {
+            "type": "usize"
+        },
+        "X1_10": {
+            "type": "pointer"
+        },
+        "X1_10_size": {
+            "type": "usize"
+        },
+        "X1_11": {
+            "type": "pointer"
+        },
+        "X1_11_size": {
+            "type": "usize"
+        },
+        "X1_12": {
+            "type": "pointer"
+        },
+        "X1_12_size": {
+            "type": "usize"
+        },
+        "X1_13": {
+            "type": "pointer"
+        },
+        "X1_13_size": {
+            "type": "usize"
+        },
+        "X1_14": {
+            "type": "pointer"
+        },
+        "X1_14_size": {
+            "type": "usize"
+        },
+        "X1_15": {
+            "type": "pointer"
+        },
+        "X1_15_size": {
+            "type": "usize"
+        },
+        "X1_16": {
+            "type": "pointer"
+        },
+        "X1_16_size": {
+            "type": "usize"
+        },
+        "X1_17": {
+            "type": "pointer"
+        },
+        "X1_17_size": {
+            "type": "usize"
+        },
+        "X1_18": {
+            "type": "pointer"
+        },
+        "X1_18_size": {
+            "type": "usize"
+        },
+        "X1_19": {
+            "type": "pointer"
+        },
+        "X1_19_size": {
+            "type": "usize"
+        },
+        "X1_20": {
+            "type": "pointer"
+        },
+        "X1_20_size": {
+            "type": "usize"
+        },
+        "X1_21": {
+            "type": "pointer"
+        },
+        "X1_21_size": {
+            "type": "usize"
+        },
+        "X1_22": {
+            "type": "pointer"
+        },
+        "X1_22_size": {
+            "type": "usize"
+        },
+        "X1_23": {
+            "type": "pointer"
+        },
+        "X1_23_size": {
+            "type": "usize"
+        },
+        "X1_24": {
+            "type": "pointer"
+        },
+        "X1_24_size": {
+            "type": "usize"
+        },
+        "X1_25": {
+            "type": "pointer"
+        },
+        "X1_25_size": {
+            "type": "usize"
+        },
+        "X1_26": {
+            "type": "pointer"
+        },
+        "X1_26_size": {
+            "type": "usize"
+        },
+        "X1_27": {
+            "type": "pointer"
+        },
+        "X1_27_size": {
+            "type": "usize"
+        },
+        "X2_0": {
+            "type": "pointer"
+        },
+        "X2_0_size": {
+            "type": "usize"
+        },
+        "B_0": {
+            "type": "f32"
+        },
+        "C_0": {
+            "type": "f32"
+        },
+        "X2_1": {
+            "type": "pointer"
+        },
+        "X2_1_size": {
+            "type": "usize"
+        },
+        "B_1": {
+            "type": "f32"
+        },
+        "C_1": {
+            "type": "f32"
+        },
+        "X2_2": {
+            "type": "pointer"
+        },
+        "X2_2_size": {
+            "type": "usize"
+        },
+        "B_2": {
+            "type": "f32"
+        },
+        "C_2": {
+            "type": "f32"
+        },
+        "X2_3": {
+            "type": "pointer"
+        },
+        "X2_3_size": {
+            "type": "usize"
+        },
+        "B_3": {
+            "type": "f32"
+        },
+        "C_3": {
+            "type": "f32"
+        },
+        "X2_4": {
+            "type": "pointer"
+        },
+        "X2_4_size": {
+            "type": "usize"
+        },
+        "B_4": {
+            "type": "f32"
+        },
+        "C_4": {
+            "type": "f32"
+        },
+        "X2_5": {
+            "type": "pointer"
+        },
+        "X2_5_size": {
+            "type": "usize"
+        },
+        "B_5": {
+            "type": "f32"
+        },
+        "C_5": {
+            "type": "f32"
+        },
+        "X2_6": {
+            "type": "pointer"
+        },
+        "X2_6_size": {
+            "type": "usize"
+        },
+        "B_6": {
+            "type": "f32"
+        },
+        "C_6": {
+            "type": "f32"
+        },
+        "X2_7": {
+            "type": "pointer"
+        },
+        "X2_7_size": {
+            "type": "usize"
+        },
+        "B_7": {
+            "type": "f32"
+        },
+        "C_7": {
+            "type": "f32"
+        },
+        "X2_8": {
+            "type": "pointer"
+        },
+        "X2_8_size": {
+            "type": "usize"
+        },
+        "B_8": {
+            "type": "f32"
+        },
+        "C_8": {
+            "type": "f32"
+        },
+        "X2_9": {
+            "type": "pointer"
+        },
+        "X2_9_size": {
+            "type": "usize"
+        },
+        "B_9": {
+            "type": "f32"
+        },
+        "C_9": {
+            "type": "f32"
+        },
+        "X2_10": {
+            "type": "pointer"
+        },
+        "X2_10_size": {
+            "type": "usize"
+        },
+        "B_10": {
+            "type": "f32"
+        },
+        "C_10": {
+            "type": "f32"
+        },
+        "X2_11": {
+            "type": "pointer"
+        },
+        "X2_11_size": {
+            "type": "usize"
+        },
+        "B_11": {
+            "type": "f32"
+        },
+        "C_11": {
+            "type": "f32"
+        },
+        "X2_12": {
+            "type": "pointer"
+        },
+        "X2_12_size": {
+            "type": "usize"
+        },
+        "B_12": {
+            "type": "f32"
+        },
+        "C_12": {
+            "type": "f32"
+        },
+        "X2_13": {
+            "type": "pointer"
+        },
+        "X2_13_size": {
+            "type": "usize"
+        },
+        "B_13": {
+            "type": "f32"
+        },
+        "C_13": {
+            "type": "f32"
+        },
+        "X2_14": {
+            "type": "pointer"
+        },
+        "X2_14_size": {
+            "type": "usize"
+        },
+        "B_14": {
+            "type": "f32"
+        },
+        "C_14": {
+            "type": "f32"
+        },
+        "X2_15": {
+            "type": "pointer"
+        },
+        "X2_15_size": {
+            "type": "usize"
+        },
+        "B_15": {
+            "type": "f32"
+        },
+        "C_15": {
+            "type": "f32"
+        },
+        "X2_16": {
+            "type": "pointer"
+        },
+        "X2_16_size": {
+            "type": "usize"
+        },
+        "B_16": {
+            "type": "f32"
+        },
+        "C_16": {
+            "type": "f32"
+        },
+        "X2_17": {
+            "type": "pointer"
+        },
+        "X2_17_size": {
+            "type": "usize"
+        },
+        "B_17": {
+            "type": "f32"
+        },
+        "C_17": {
+            "type": "f32"
+        },
+        "X2_18": {
+            "type": "pointer"
+        },
+        "X2_18_size": {
+            "type": "usize"
+        },
+        "B_18": {
+            "type": "f32"
+        },
+        "C_18": {
+            "type": "f32"
+        },
+        "X2_19": {
+            "type": "pointer"
+        },
+        "X2_19_size": {
+            "type": "usize"
+        },
+        "B_19": {
+            "type": "f32"
+        },
+        "C_19": {
+            "type": "f32"
+        },
+        "X2_20": {
+            "type": "pointer"
+        },
+        "X2_20_size": {
+            "type": "usize"
+        },
+        "B_20": {
+            "type": "f32"
+        },
+        "C_20": {
+            "type": "f32"
+        },
+        "X2_21": {
+            "type": "pointer"
+        },
+        "X2_21_size": {
+            "type": "usize"
+        },
+        "B_21": {
+            "type": "f32"
+        },
+        "C_21": {
+            "type": "f32"
+        },
+        "X2_22": {
+            "type": "pointer"
+        },
+        "X2_22_size": {
+            "type": "usize"
+        },
+        "B_22": {
+            "type": "f32"
+        },
+        "C_22": {
+            "type": "f32"
+        },
+        "X2_23": {
+            "type": "pointer"
+        },
+        "X2_23_size": {
+            "type": "usize"
+        },
+        "B_23": {
+            "type": "f32"
+        },
+        "C_23": {
+            "type": "f32"
+        },
+        "X2_24": {
+            "type": "pointer"
+        },
+        "X2_24_size": {
+            "type": "usize"
+        },
+        "B_24": {
+            "type": "f32"
+        },
+        "C_24": {
+            "type": "f32"
+        },
+        "X2_25": {
+            "type": "pointer"
+        },
+        "X2_25_size": {
+            "type": "usize"
+        },
+        "B_25": {
+            "type": "f32"
+        },
+        "C_25": {
+            "type": "f32"
+        },
+        "X2_26": {
+            "type": "pointer"
+        },
+        "X2_26_size": {
+            "type": "usize"
+        },
+        "B_26": {
+            "type": "f32"
+        },
+        "C_26": {
+            "type": "f32"
+        },
+        "X2_27": {
+            "type": "pointer"
+        },
+        "X2_27_size": {
+            "type": "usize"
+        },
+        "B_27": {
+            "type": "f32"
+        },
+        "C_27": {
+            "type": "f32"
+        },
+        "X2PC_0": {
+            "type": "pointer"
+        },
+        "X2PC_0_size": {
+            "type": "usize"
+        },
+        "X2PC_1": {
+            "type": "pointer"
+        },
+        "X2PC_1_size": {
+            "type": "usize"
+        },
+        "X2PC_2": {
+            "type": "pointer"
+        },
+        "X2PC_2_size": {
+            "type": "usize"
+        },
+        "X2PC_3": {
+            "type": "pointer"
+        },
+        "X2PC_3_size": {
+            "type": "usize"
+        },
+        "X2PC_4": {
+            "type": "pointer"
+        },
+        "X2PC_4_size": {
+            "type": "usize"
+        },
+        "X2PC_5": {
+            "type": "pointer"
+        },
+        "X2PC_5_size": {
+            "type": "usize"
+        },
+        "X2PC_6": {
+            "type": "pointer"
+        },
+        "X2PC_6_size": {
+            "type": "usize"
+        },
+        "X2PC_7": {
+            "type": "pointer"
+        },
+        "X2PC_7_size": {
+            "type": "usize"
+        },
+        "X2PC_8": {
+            "type": "pointer"
+        },
+        "X2PC_8_size": {
+            "type": "usize"
+        },
+        "X2PC_9": {
+            "type": "pointer"
+        },
+        "X2PC_9_size": {
+            "type": "usize"
+        },
+        "X2PC_10": {
+            "type": "pointer"
+        },
+        "X2PC_10_size": {
+            "type": "usize"
+        },
+        "X2PC_11": {
+            "type": "pointer"
+        },
+        "X2PC_11_size": {
+            "type": "usize"
+        },
+        "X2PC_12": {
+            "type": "pointer"
+        },
+        "X2PC_12_size": {
+            "type": "usize"
+        },
+        "X2PC_13": {
+            "type": "pointer"
+        },
+        "X2PC_13_size": {
+            "type": "usize"
+        },
+        "X2PC_14": {
+            "type": "pointer"
+        },
+        "X2PC_14_size": {
+            "type": "usize"
+        },
+        "X2PC_15": {
+            "type": "pointer"
+        },
+        "X2PC_15_size": {
+            "type": "usize"
+        },
+        "X2PC_16": {
+            "type": "pointer"
+        },
+        "X2PC_16_size": {
+            "type": "usize"
+        },
+        "X2PC_17": {
+            "type": "pointer"
+        },
+        "X2PC_17_size": {
+            "type": "usize"
+        },
+        "X2PC_18": {
+            "type": "pointer"
+        },
+        "X2PC_18_size": {
+            "type": "usize"
+        },
+        "X2PC_19": {
+            "type": "pointer"
+        },
+        "X2PC_19_size": {
+            "type": "usize"
+        },
+        "X2PC_20": {
+            "type": "pointer"
+        },
+        "X2PC_20_size": {
+            "type": "usize"
+        },
+        "X2PC_21": {
+            "type": "pointer"
+        },
+        "X2PC_21_size": {
+            "type": "usize"
+        },
+        "X2PC_22": {
+            "type": "pointer"
+        },
+        "X2PC_22_size": {
+            "type": "usize"
+        },
+        "X2PC_23": {
+            "type": "pointer"
+        },
+        "X2PC_23_size": {
+            "type": "usize"
+        },
+        "X2PC_24": {
+            "type": "pointer"
+        },
+        "X2PC_24_size": {
+            "type": "usize"
+        },
+        "X2PC_25": {
+            "type": "pointer"
+        },
+        "X2PC_25_size": {
+            "type": "usize"
+        },
+        "X2PC_26": {
+            "type": "pointer"
+        },
+        "X2PC_26_size": {
+            "type": "usize"
+        },
+        "X2PC_27": {
+            "type": "pointer"
+        },
+        "X2PC_27_size": {
+            "type": "usize"
+        }
+    },
+    "operations": {
+        "parse_opora": {
+            "inputs": [
+                "opora",
+                "N"
+            ],
+            "outputs": [
+                "Fs",
+                "L",
+                "M",
+                "p",
+                "S_0",
+                "S0_size",
+                "meta",
+                "meta_size"
+            ],
+            "module": {
+                "name": "c_parse_opora",
+                "args": [
+                    "opora",
+                    "N",
+                    "Fs",
+                    "L",
+                    "M",
+                    "p",
+                    "S_0",
+                    "S0_sizemeta",
+                    "meta_size"
+                ]
+            }
+        },
+        "calc_coeff": {
+            "inputs": [
+                "S_0",
+                "S0_size",
+                "L"
+            ],
+            "outputs": [
+                "a",
+                "b",
+                "A"
+            ],
+            "module": {
+                "name": "c_calc_coeff",
+                "args": [
+                    "S_0",
+                    "S0_size",
+                    "L",
+                    "a",
+                    "b",
+                    "A"
+                ]
+            }
+        },
+        "cu_calc_coeff": {
+            "inputs": [
+                "S_0",
+                "S0_size",
+                "L"
+            ],
+            "outputs": [
+                "a",
+                "b",
+                "A"
+            ],
+            "module": {
+                "name": "cuda_calc_coeff",
+                "args": [
+                    "S_0",
+                    "S0_size",
+                    "L",
+                    "a",
+                    "b",
+                    "A"
+                ]
+            }
+        },
+        "calc_exps": {
+            "inputs": [
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "W",
+                "W_size"
+            ],
+            "module": {
+                "name": "c_calc_exps",
+                "args": [
+                    "M",
+                    "p",
+                    "W",
+                    "W_size"
+                ]
+            }
+        },
+        "cu_calc_exps": {
+            "inputs": [
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "W",
+                "W_size"
+            ],
+            "module": {
+                "name": "cuda_calc_exps",
+                "args": [
+                    "M",
+                    "p",
+                    "W",
+                    "W_size"
+                ]
+            }
+        },
+        "fft_i": {
+            "inputs": [
+                "S_0",
+                "S0_size",
+                "W",
+                "W_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "S_1",
+                "S1_size"
+            ],
+            "module": {
+                "name": "c_fft_i",
+                "args": [
+                    "S_0",
+                    "S0_size",
+                    "W",
+                    "W_size",
+                    "M",
+                    "p",
+                    "S_1",
+                    "S1_size"
+                ]
+            }
+        },
+        "cu_fft_i": {
+            "inputs": [
+                "S_0",
+                "S0_size",
+                "W",
+                "W_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "S_1",
+                "S1_size"
+            ],
+            "module": {
+                "name": "cuda_fft_i",
+                "args": [
+                    "S_0",
+                    "S0_size",
+                    "W",
+                    "W_size",
+                    "M",
+                    "p",
+                    "S_1",
+                    "S1_size"
+                ]
+            }
+        },
+        "extract_samples_0": {
+            "inputs": [
+                "X_raw_0",
+                "X_raw_0_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_0",
+                "X_0_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_0",
+                    "X_raw_0_size",
+                    "M",
+                    "Fs",
+                    "X_0",
+                    "X_0_size"
+                ]
+            }
+        },
+        "extract_samples_1": {
+            "inputs": [
+                "X_raw_1",
+                "X_raw_1_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_1",
+                "X_1_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_1",
+                    "X_raw_1_size",
+                    "M",
+                    "Fs",
+                    "X_1",
+                    "X_1_size"
+                ]
+            }
+        },
+        "extract_samples_2": {
+            "inputs": [
+                "X_raw_2",
+                "X_raw_2_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_2",
+                "X_2_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_2",
+                    "X_raw_2_size",
+                    "M",
+                    "Fs",
+                    "X_2",
+                    "X_2_size"
+                ]
+            }
+        },
+        "extract_samples_3": {
+            "inputs": [
+                "X_raw_3",
+                "X_raw_3_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_3",
+                "X_3_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_3",
+                    "X_raw_3_size",
+                    "M",
+                    "Fs",
+                    "X_3",
+                    "X_3_size"
+                ]
+            }
+        },
+        "extract_samples_4": {
+            "inputs": [
+                "X_raw_4",
+                "X_raw_4_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_4",
+                "X_4_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_4",
+                    "X_raw_4_size",
+                    "M",
+                    "Fs",
+                    "X_4",
+                    "X_4_size"
+                ]
+            }
+        },
+        "extract_samples_5": {
+            "inputs": [
+                "X_raw_5",
+                "X_raw_5_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_5",
+                "X_5_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_5",
+                    "X_raw_5_size",
+                    "M",
+                    "Fs",
+                    "X_5",
+                    "X_5_size"
+                ]
+            }
+        },
+        "extract_samples_6": {
+            "inputs": [
+                "X_raw_6",
+                "X_raw_6_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_6",
+                "X_6_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_6",
+                    "X_raw_6_size",
+                    "M",
+                    "Fs",
+                    "X_6",
+                    "X_6_size"
+                ]
+            }
+        },
+        "extract_samples_7": {
+            "inputs": [
+                "X_raw_7",
+                "X_raw_7_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_7",
+                "X_7_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_7",
+                    "X_raw_7_size",
+                    "M",
+                    "Fs",
+                    "X_7",
+                    "X_7_size"
+                ]
+            }
+        },
+        "extract_samples_8": {
+            "inputs": [
+                "X_raw_8",
+                "X_raw_8_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_8",
+                "X_8_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_8",
+                    "X_raw_8_size",
+                    "M",
+                    "Fs",
+                    "X_8",
+                    "X_8_size"
+                ]
+            }
+        },
+        "extract_samples_9": {
+            "inputs": [
+                "X_raw_9",
+                "X_raw_9_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_9",
+                "X_9_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_9",
+                    "X_raw_9_size",
+                    "M",
+                    "Fs",
+                    "X_9",
+                    "X_9_size"
+                ]
+            }
+        },
+        "extract_samples_10": {
+            "inputs": [
+                "X_raw_10",
+                "X_raw_10_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_10",
+                "X_10_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_10",
+                    "X_raw_10_size",
+                    "M",
+                    "Fs",
+                    "X_10",
+                    "X_10_size"
+                ]
+            }
+        },
+        "extract_samples_11": {
+            "inputs": [
+                "X_raw_11",
+                "X_raw_11_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_11",
+                "X_11_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_11",
+                    "X_raw_11_size",
+                    "M",
+                    "Fs",
+                    "X_11",
+                    "X_11_size"
+                ]
+            }
+        },
+        "extract_samples_12": {
+            "inputs": [
+                "X_raw_12",
+                "X_raw_12_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_12",
+                "X_12_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_12",
+                    "X_raw_12_size",
+                    "M",
+                    "Fs",
+                    "X_12",
+                    "X_12_size"
+                ]
+            }
+        },
+        "extract_samples_13": {
+            "inputs": [
+                "X_raw_13",
+                "X_raw_13_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_13",
+                "X_13_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_13",
+                    "X_raw_13_size",
+                    "M",
+                    "Fs",
+                    "X_13",
+                    "X_13_size"
+                ]
+            }
+        },
+        "extract_samples_14": {
+            "inputs": [
+                "X_raw_14",
+                "X_raw_14_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_14",
+                "X_14_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_14",
+                    "X_raw_14_size",
+                    "M",
+                    "Fs",
+                    "X_14",
+                    "X_14_size"
+                ]
+            }
+        },
+        "extract_samples_15": {
+            "inputs": [
+                "X_raw_15",
+                "X_raw_15_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_15",
+                "X_15_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_15",
+                    "X_raw_15_size",
+                    "M",
+                    "Fs",
+                    "X_15",
+                    "X_15_size"
+                ]
+            }
+        },
+        "extract_samples_16": {
+            "inputs": [
+                "X_raw_16",
+                "X_raw_16_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_16",
+                "X_16_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_16",
+                    "X_raw_16_size",
+                    "M",
+                    "Fs",
+                    "X_16",
+                    "X_16_size"
+                ]
+            }
+        },
+        "extract_samples_17": {
+            "inputs": [
+                "X_raw_17",
+                "X_raw_17_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_17",
+                "X_17_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_17",
+                    "X_raw_17_size",
+                    "M",
+                    "Fs",
+                    "X_17",
+                    "X_17_size"
+                ]
+            }
+        },
+        "extract_samples_18": {
+            "inputs": [
+                "X_raw_18",
+                "X_raw_18_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_18",
+                "X_18_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_18",
+                    "X_raw_18_size",
+                    "M",
+                    "Fs",
+                    "X_18",
+                    "X_18_size"
+                ]
+            }
+        },
+        "extract_samples_19": {
+            "inputs": [
+                "X_raw_19",
+                "X_raw_19_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_19",
+                "X_19_size"
+            ],
+            "module": {
+                "name": "c_extract_samples",
+                "args": [
+                    "X_raw_19",
+                    "X_raw_19_size",
+                    "M",
+                    "Fs",
+                    "X_19",
+                    "X_19_size"
+                ]
+            }
+        },
+        "cu_extract_samples_0": {
+            "inputs": [
+                "X_raw_0",
+                "X_raw_0_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_0",
+                "X_0_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_0",
+                    "X_raw_0_sizeM",
+                    "Fs",
+                    "X_0",
+                    "X_0_size"
+                ]
+            }
+        },
+        "cu_extract_samples_1": {
+            "inputs": [
+                "X_raw_1",
+                "X_raw_1_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_1",
+                "X_1_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_1",
+                    "X_raw_1_sizeM",
+                    "Fs",
+                    "X_1",
+                    "X_1_size"
+                ]
+            }
+        },
+        "cu_extract_samples_2": {
+            "inputs": [
+                "X_raw_2",
+                "X_raw_2_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_2",
+                "X_2_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_2",
+                    "X_raw_2_sizeM",
+                    "Fs",
+                    "X_2",
+                    "X_2_size"
+                ]
+            }
+        },
+        "cu_extract_samples_3": {
+            "inputs": [
+                "X_raw_3",
+                "X_raw_3_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_3",
+                "X_3_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_3",
+                    "X_raw_3_sizeM",
+                    "Fs",
+                    "X_3",
+                    "X_3_size"
+                ]
+            }
+        },
+        "cu_extract_samples_4": {
+            "inputs": [
+                "X_raw_4",
+                "X_raw_4_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_4",
+                "X_4_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_4",
+                    "X_raw_4_sizeM",
+                    "Fs",
+                    "X_4",
+                    "X_4_size"
+                ]
+            }
+        },
+        "cu_extract_samples_5": {
+            "inputs": [
+                "X_raw_5",
+                "X_raw_5_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_5",
+                "X_5_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_5",
+                    "X_raw_5_sizeM",
+                    "Fs",
+                    "X_5",
+                    "X_5_size"
+                ]
+            }
+        },
+        "cu_extract_samples_6": {
+            "inputs": [
+                "X_raw_6",
+                "X_raw_6_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_6",
+                "X_6_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_6",
+                    "X_raw_6_sizeM",
+                    "Fs",
+                    "X_6",
+                    "X_6_size"
+                ]
+            }
+        },
+        "cu_extract_samples_7": {
+            "inputs": [
+                "X_raw_7",
+                "X_raw_7_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_7",
+                "X_7_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_7",
+                    "X_raw_7_sizeM",
+                    "Fs",
+                    "X_7",
+                    "X_7_size"
+                ]
+            }
+        },
+        "cu_extract_samples_8": {
+            "inputs": [
+                "X_raw_8",
+                "X_raw_8_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_8",
+                "X_8_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_8",
+                    "X_raw_8_sizeM",
+                    "Fs",
+                    "X_8",
+                    "X_8_size"
+                ]
+            }
+        },
+        "cu_extract_samples_9": {
+            "inputs": [
+                "X_raw_9",
+                "X_raw_9_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_9",
+                "X_9_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_9",
+                    "X_raw_9_sizeM",
+                    "Fs",
+                    "X_9",
+                    "X_9_size"
+                ]
+            }
+        },
+        "cu_extract_samples_10": {
+            "inputs": [
+                "X_raw_10",
+                "X_raw_10_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_10",
+                "X_10_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_10",
+                    "X_raw_10_sizeM",
+                    "Fs",
+                    "X_10",
+                    "X_10_size"
+                ]
+            }
+        },
+        "cu_extract_samples_11": {
+            "inputs": [
+                "X_raw_11",
+                "X_raw_11_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_11",
+                "X_11_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_11",
+                    "X_raw_11_sizeM",
+                    "Fs",
+                    "X_11",
+                    "X_11_size"
+                ]
+            }
+        },
+        "cu_extract_samples_12": {
+            "inputs": [
+                "X_raw_12",
+                "X_raw_12_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_12",
+                "X_12_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_12",
+                    "X_raw_12_sizeM",
+                    "Fs",
+                    "X_12",
+                    "X_12_size"
+                ]
+            }
+        },
+        "cu_extract_samples_13": {
+            "inputs": [
+                "X_raw_13",
+                "X_raw_13_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_13",
+                "X_13_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_13",
+                    "X_raw_13_sizeM",
+                    "Fs",
+                    "X_13",
+                    "X_13_size"
+                ]
+            }
+        },
+        "cu_extract_samples_14": {
+            "inputs": [
+                "X_raw_14",
+                "X_raw_14_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_14",
+                "X_14_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_14",
+                    "X_raw_14_sizeM",
+                    "Fs",
+                    "X_14",
+                    "X_14_size"
+                ]
+            }
+        },
+        "cu_extract_samples_15": {
+            "inputs": [
+                "X_raw_15",
+                "X_raw_15_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_15",
+                "X_15_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_15",
+                    "X_raw_15_sizeM",
+                    "Fs",
+                    "X_15",
+                    "X_15_size"
+                ]
+            }
+        },
+        "cu_extract_samples_16": {
+            "inputs": [
+                "X_raw_16",
+                "X_raw_16_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_16",
+                "X_16_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_16",
+                    "X_raw_16_sizeM",
+                    "Fs",
+                    "X_16",
+                    "X_16_size"
+                ]
+            }
+        },
+        "cu_extract_samples_17": {
+            "inputs": [
+                "X_raw_17",
+                "X_raw_17_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_17",
+                "X_17_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_17",
+                    "X_raw_17_sizeM",
+                    "Fs",
+                    "X_17",
+                    "X_17_size"
+                ]
+            }
+        },
+        "cu_extract_samples_18": {
+            "inputs": [
+                "X_raw_18",
+                "X_raw_18_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_18",
+                "X_18_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_18",
+                    "X_raw_18_sizeM",
+                    "Fs",
+                    "X_18",
+                    "X_18_size"
+                ]
+            }
+        },
+        "cu_extract_samples_19": {
+            "inputs": [
+                "X_raw_19",
+                "X_raw_19_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_19",
+                "X_19_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_19",
+                    "X_raw_19_sizeM",
+                    "Fs",
+                    "X_19",
+                    "X_19_size"
+                ]
+            }
+        },
+        "cu_extract_samples_20": {
+            "inputs": [
+                "X_raw_20",
+                "X_raw_20_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_20",
+                "X_20_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_20",
+                    "X_raw_20_sizeM",
+                    "Fs",
+                    "X_20",
+                    "X_20_size"
+                ]
+            }
+        },
+        "cu_extract_samples_21": {
+            "inputs": [
+                "X_raw_21",
+                "X_raw_21_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_21",
+                "X_21_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_21",
+                    "X_raw_21_sizeM",
+                    "Fs",
+                    "X_21",
+                    "X_21_size"
+                ]
+            }
+        },
+        "cu_extract_samples_22": {
+            "inputs": [
+                "X_raw_22",
+                "X_raw_22_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_22",
+                "X_22_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_22",
+                    "X_raw_22_sizeM",
+                    "Fs",
+                    "X_22",
+                    "X_22_size"
+                ]
+            }
+        },
+        "cu_extract_samples_23": {
+            "inputs": [
+                "X_raw_23",
+                "X_raw_23_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_23",
+                "X_23_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_23",
+                    "X_raw_23_sizeM",
+                    "Fs",
+                    "X_23",
+                    "X_23_size"
+                ]
+            }
+        },
+        "cu_extract_samples_24": {
+            "inputs": [
+                "X_raw_24",
+                "X_raw_24_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_24",
+                "X_24_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_24",
+                    "X_raw_24_sizeM",
+                    "Fs",
+                    "X_24",
+                    "X_24_size"
+                ]
+            }
+        },
+        "cu_extract_samples_25": {
+            "inputs": [
+                "X_raw_25",
+                "X_raw_25_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_25",
+                "X_25_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_25",
+                    "X_raw_25_sizeM",
+                    "Fs",
+                    "X_25",
+                    "X_25_size"
+                ]
+            }
+        },
+        "cu_extract_samples_26": {
+            "inputs": [
+                "X_raw_26",
+                "X_raw_26_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_26",
+                "X_26_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_26",
+                    "X_raw_26_sizeM",
+                    "Fs",
+                    "X_26",
+                    "X_26_size"
+                ]
+            }
+        },
+        "cu_extract_samples_27": {
+            "inputs": [
+                "X_raw_27",
+                "X_raw_27_size",
+                "M",
+                "Fs"
+            ],
+            "outputs": [
+                "X_27",
+                "X_27_size"
+            ],
+            "module": {
+                "name": "cuda_extract_samples",
+                "args": [
+                    "X_raw_27",
+                    "X_raw_27_sizeM",
+                    "Fs",
+                    "X_27",
+                    "X_27_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_0": {
+            "inputs": [
+                "X_0",
+                "X_0_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_0",
+                "X1_0_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_0",
+                    "X_0_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_0X1_0_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_1": {
+            "inputs": [
+                "X_1",
+                "X_1_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_1",
+                "X1_1_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_1",
+                    "X_1_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_1X1_1_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_2": {
+            "inputs": [
+                "X_2",
+                "X_2_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_2",
+                "X1_2_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_2",
+                    "X_2_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_2X1_2_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_3": {
+            "inputs": [
+                "X_3",
+                "X_3_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_3",
+                "X1_3_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_3",
+                    "X_3_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_3X1_3_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_4": {
+            "inputs": [
+                "X_4",
+                "X_4_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_4",
+                "X1_4_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_4",
+                    "X_4_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_4X1_4_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_5": {
+            "inputs": [
+                "X_5",
+                "X_5_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_5",
+                "X1_5_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_5",
+                    "X_5_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_5X1_5_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_6": {
+            "inputs": [
+                "X_6",
+                "X_6_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_6",
+                "X1_6_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_6",
+                    "X_6_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_6X1_6_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_7": {
+            "inputs": [
+                "X_7",
+                "X_7_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_7",
+                "X1_7_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_7",
+                    "X_7_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_7X1_7_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_8": {
+            "inputs": [
+                "X_8",
+                "X_8_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_8",
+                "X1_8_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_8",
+                    "X_8_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_8X1_8_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_9": {
+            "inputs": [
+                "X_9",
+                "X_9_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_9",
+                "X1_9_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_9",
+                    "X_9_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_9X1_9_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_10": {
+            "inputs": [
+                "X_10",
+                "X_10_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_10",
+                "X1_10_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_10",
+                    "X_10_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_10X1_10_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_11": {
+            "inputs": [
+                "X_11",
+                "X_11_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_11",
+                "X1_11_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_11",
+                    "X_11_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_11X1_11_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_12": {
+            "inputs": [
+                "X_12",
+                "X_12_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_12",
+                "X1_12_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_12",
+                    "X_12_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_12X1_12_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_13": {
+            "inputs": [
+                "X_13",
+                "X_13_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_13",
+                "X1_13_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_13",
+                    "X_13_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_13X1_13_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_14": {
+            "inputs": [
+                "X_14",
+                "X_14_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_14",
+                "X1_14_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_14",
+                    "X_14_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_14X1_14_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_15": {
+            "inputs": [
+                "X_15",
+                "X_15_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_15",
+                "X1_15_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_15",
+                    "X_15_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_15X1_15_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_16": {
+            "inputs": [
+                "X_16",
+                "X_16_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_16",
+                "X1_16_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_16",
+                    "X_16_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_16X1_16_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_17": {
+            "inputs": [
+                "X_17",
+                "X_17_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_17",
+                "X1_17_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_17",
+                    "X_17_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_17X1_17_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_18": {
+            "inputs": [
+                "X_18",
+                "X_18_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_18",
+                "X1_18_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_18",
+                    "X_18_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_18X1_18_size"
+                ]
+            }
+        },
+        "fft_multconj_rfft_19": {
+            "inputs": [
+                "X_19",
+                "X_19_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_19",
+                "X1_19_size"
+            ],
+            "module": {
+                "name": "c_fft_multconj_rfft",
+                "args": [
+                    "X_19",
+                    "X_19_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_19X1_19_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_0": {
+            "inputs": [
+                "X_0",
+                "X_0_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_0",
+                "X1_0_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_0",
+                    "X_0_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_0",
+                    "X1_0_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_1": {
+            "inputs": [
+                "X_1",
+                "X_1_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_1",
+                "X1_1_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_1",
+                    "X_1_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_1",
+                    "X1_1_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_2": {
+            "inputs": [
+                "X_2",
+                "X_2_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_2",
+                "X1_2_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_2",
+                    "X_2_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_2",
+                    "X1_2_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_3": {
+            "inputs": [
+                "X_3",
+                "X_3_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_3",
+                "X1_3_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_3",
+                    "X_3_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_3",
+                    "X1_3_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_4": {
+            "inputs": [
+                "X_4",
+                "X_4_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_4",
+                "X1_4_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_4",
+                    "X_4_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_4",
+                    "X1_4_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_5": {
+            "inputs": [
+                "X_5",
+                "X_5_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_5",
+                "X1_5_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_5",
+                    "X_5_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_5",
+                    "X1_5_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_6": {
+            "inputs": [
+                "X_6",
+                "X_6_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_6",
+                "X1_6_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_6",
+                    "X_6_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_6",
+                    "X1_6_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_7": {
+            "inputs": [
+                "X_7",
+                "X_7_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_7",
+                "X1_7_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_7",
+                    "X_7_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_7",
+                    "X1_7_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_8": {
+            "inputs": [
+                "X_8",
+                "X_8_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_8",
+                "X1_8_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_8",
+                    "X_8_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_8",
+                    "X1_8_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_9": {
+            "inputs": [
+                "X_9",
+                "X_9_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_9",
+                "X1_9_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_9",
+                    "X_9_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_9",
+                    "X1_9_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_10": {
+            "inputs": [
+                "X_10",
+                "X_10_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_10",
+                "X1_10_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_10",
+                    "X_10_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_10",
+                    "X1_10_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_11": {
+            "inputs": [
+                "X_11",
+                "X_11_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_11",
+                "X1_11_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_11",
+                    "X_11_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_11",
+                    "X1_11_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_12": {
+            "inputs": [
+                "X_12",
+                "X_12_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_12",
+                "X1_12_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_12",
+                    "X_12_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_12",
+                    "X1_12_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_13": {
+            "inputs": [
+                "X_13",
+                "X_13_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_13",
+                "X1_13_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_13",
+                    "X_13_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_13",
+                    "X1_13_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_14": {
+            "inputs": [
+                "X_14",
+                "X_14_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_14",
+                "X1_14_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_14",
+                    "X_14_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_14",
+                    "X1_14_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_15": {
+            "inputs": [
+                "X_15",
+                "X_15_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_15",
+                "X1_15_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_15",
+                    "X_15_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_15",
+                    "X1_15_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_16": {
+            "inputs": [
+                "X_16",
+                "X_16_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_16",
+                "X1_16_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_16",
+                    "X_16_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_16",
+                    "X1_16_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_17": {
+            "inputs": [
+                "X_17",
+                "X_17_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_17",
+                "X1_17_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_17",
+                    "X_17_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_17",
+                    "X1_17_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_18": {
+            "inputs": [
+                "X_18",
+                "X_18_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_18",
+                "X1_18_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_18",
+                    "X_18_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_18",
+                    "X1_18_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_19": {
+            "inputs": [
+                "X_19",
+                "X_19_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_19",
+                "X1_19_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_19",
+                    "X_19_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_19",
+                    "X1_19_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_20": {
+            "inputs": [
+                "X_20",
+                "X_20_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_20",
+                "X1_20_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_20",
+                    "X_20_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_20",
+                    "X1_20_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_21": {
+            "inputs": [
+                "X_21",
+                "X_21_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_21",
+                "X1_21_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_21",
+                    "X_21_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_21",
+                    "X1_21_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_22": {
+            "inputs": [
+                "X_22",
+                "X_22_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_22",
+                "X1_22_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_22",
+                    "X_22_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_22",
+                    "X1_22_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_23": {
+            "inputs": [
+                "X_23",
+                "X_23_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_23",
+                "X1_23_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_23",
+                    "X_23_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_23",
+                    "X1_23_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_24": {
+            "inputs": [
+                "X_24",
+                "X_24_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_24",
+                "X1_24_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_24",
+                    "X_24_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_24",
+                    "X1_24_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_25": {
+            "inputs": [
+                "X_25",
+                "X_25_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_25",
+                "X1_25_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_25",
+                    "X_25_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_25",
+                    "X1_25_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_26": {
+            "inputs": [
+                "X_26",
+                "X_26_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_26",
+                "X1_26_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_26",
+                    "X_26_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_26",
+                    "X1_26_size"
+                ]
+            }
+        },
+        "cu_fft_multconj_rfft_27": {
+            "inputs": [
+                "X_27",
+                "X_27_size",
+                "W",
+                "W_size",
+                "S_1",
+                "S1_size",
+                "M",
+                "p"
+            ],
+            "outputs": [
+                "X1_27",
+                "X1_27_size"
+            ],
+            "module": {
+                "name": "cuda_fft_multconj_rfft",
+                "args": [
+                    "X_27",
+                    "X_27_size",
+                    "W",
+                    "W_size",
+                    "S_1",
+                    "S1_size",
+                    "M",
+                    "p",
+                    "X1_27",
+                    "X1_27_size"
+                ]
+            }
+        },
+        "calc_output_trace_0": {
+            "inputs": [
+                "X1_0",
+                "X1_0_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_0",
+                "C_0",
+                "X2_0",
+                "X2_0_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_0",
+                    "X1_0_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_0",
+                    "C_0",
+                    "X2_0",
+                    "X2_0_size"
+                ]
+            }
+        },
+        "calc_output_trace_1": {
+            "inputs": [
+                "X1_1",
+                "X1_1_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_1",
+                "C_1",
+                "X2_1",
+                "X2_1_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_1",
+                    "X1_1_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_1",
+                    "C_1",
+                    "X2_1",
+                    "X2_1_size"
+                ]
+            }
+        },
+        "calc_output_trace_2": {
+            "inputs": [
+                "X1_2",
+                "X1_2_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_2",
+                "C_2",
+                "X2_2",
+                "X2_2_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_2",
+                    "X1_2_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_2",
+                    "C_2",
+                    "X2_2",
+                    "X2_2_size"
+                ]
+            }
+        },
+        "calc_output_trace_3": {
+            "inputs": [
+                "X1_3",
+                "X1_3_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_3",
+                "C_3",
+                "X2_3",
+                "X2_3_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_3",
+                    "X1_3_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_3",
+                    "C_3",
+                    "X2_3",
+                    "X2_3_size"
+                ]
+            }
+        },
+        "calc_output_trace_4": {
+            "inputs": [
+                "X1_4",
+                "X1_4_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_4",
+                "C_4",
+                "X2_4",
+                "X2_4_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_4",
+                    "X1_4_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_4",
+                    "C_4",
+                    "X2_4",
+                    "X2_4_size"
+                ]
+            }
+        },
+        "calc_output_trace_5": {
+            "inputs": [
+                "X1_5",
+                "X1_5_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_5",
+                "C_5",
+                "X2_5",
+                "X2_5_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_5",
+                    "X1_5_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_5",
+                    "C_5",
+                    "X2_5",
+                    "X2_5_size"
+                ]
+            }
+        },
+        "calc_output_trace_6": {
+            "inputs": [
+                "X1_6",
+                "X1_6_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_6",
+                "C_6",
+                "X2_6",
+                "X2_6_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_6",
+                    "X1_6_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_6",
+                    "C_6",
+                    "X2_6",
+                    "X2_6_size"
+                ]
+            }
+        },
+        "calc_output_trace_7": {
+            "inputs": [
+                "X1_7",
+                "X1_7_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_7",
+                "C_7",
+                "X2_7",
+                "X2_7_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_7",
+                    "X1_7_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_7",
+                    "C_7",
+                    "X2_7",
+                    "X2_7_size"
+                ]
+            }
+        },
+        "calc_output_trace_8": {
+            "inputs": [
+                "X1_8",
+                "X1_8_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_8",
+                "C_8",
+                "X2_8",
+                "X2_8_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_8",
+                    "X1_8_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_8",
+                    "C_8",
+                    "X2_8",
+                    "X2_8_size"
+                ]
+            }
+        },
+        "calc_output_trace_9": {
+            "inputs": [
+                "X1_9",
+                "X1_9_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_9",
+                "C_9",
+                "X2_9",
+                "X2_9_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_9",
+                    "X1_9_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_9",
+                    "C_9",
+                    "X2_9",
+                    "X2_9_size"
+                ]
+            }
+        },
+        "calc_output_trace_10": {
+            "inputs": [
+                "X1_10",
+                "X1_10_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_10",
+                "C_10",
+                "X2_10",
+                "X2_10_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_10",
+                    "X1_10_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_10",
+                    "C_10",
+                    "X2_10",
+                    "X2_10_size"
+                ]
+            }
+        },
+        "calc_output_trace_11": {
+            "inputs": [
+                "X1_11",
+                "X1_11_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_11",
+                "C_11",
+                "X2_11",
+                "X2_11_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_11",
+                    "X1_11_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_11",
+                    "C_11",
+                    "X2_11",
+                    "X2_11_size"
+                ]
+            }
+        },
+        "calc_output_trace_12": {
+            "inputs": [
+                "X1_12",
+                "X1_12_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_12",
+                "C_12",
+                "X2_12",
+                "X2_12_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_12",
+                    "X1_12_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_12",
+                    "C_12",
+                    "X2_12",
+                    "X2_12_size"
+                ]
+            }
+        },
+        "calc_output_trace_13": {
+            "inputs": [
+                "X1_13",
+                "X1_13_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_13",
+                "C_13",
+                "X2_13",
+                "X2_13_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_13",
+                    "X1_13_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_13",
+                    "C_13",
+                    "X2_13",
+                    "X2_13_size"
+                ]
+            }
+        },
+        "calc_output_trace_14": {
+            "inputs": [
+                "X1_14",
+                "X1_14_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_14",
+                "C_14",
+                "X2_14",
+                "X2_14_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_14",
+                    "X1_14_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_14",
+                    "C_14",
+                    "X2_14",
+                    "X2_14_size"
+                ]
+            }
+        },
+        "calc_output_trace_15": {
+            "inputs": [
+                "X1_15",
+                "X1_15_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_15",
+                "C_15",
+                "X2_15",
+                "X2_15_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_15",
+                    "X1_15_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_15",
+                    "C_15",
+                    "X2_15",
+                    "X2_15_size"
+                ]
+            }
+        },
+        "calc_output_trace_16": {
+            "inputs": [
+                "X1_16",
+                "X1_16_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_16",
+                "C_16",
+                "X2_16",
+                "X2_16_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_16",
+                    "X1_16_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_16",
+                    "C_16",
+                    "X2_16",
+                    "X2_16_size"
+                ]
+            }
+        },
+        "calc_output_trace_17": {
+            "inputs": [
+                "X1_17",
+                "X1_17_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_17",
+                "C_17",
+                "X2_17",
+                "X2_17_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_17",
+                    "X1_17_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_17",
+                    "C_17",
+                    "X2_17",
+                    "X2_17_size"
+                ]
+            }
+        },
+        "calc_output_trace_18": {
+            "inputs": [
+                "X1_18",
+                "X1_18_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_18",
+                "C_18",
+                "X2_18",
+                "X2_18_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_18",
+                    "X1_18_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_18",
+                    "C_18",
+                    "X2_18",
+                    "X2_18_size"
+                ]
+            }
+        },
+        "calc_output_trace_19": {
+            "inputs": [
+                "X1_19",
+                "X1_19_size",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_19",
+                "C_19",
+                "X2_19",
+                "X2_19_size"
+            ],
+            "module": {
+                "name": "c_calc_output_trace",
+                "args": [
+                    "X1_19",
+                    "X1_19_size",
+                    "L",
+                    "a",
+                    "b",
+                    "B_19",
+                    "C_19",
+                    "X2_19",
+                    "X2_19_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace0": {
+            "inputs": [
+                "X1_0",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_0",
+                "C_0",
+                "X2_0",
+                "X2_0_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_0",
+                    "L",
+                    "a",
+                    "b",
+                    "B_0",
+                    "C_0",
+                    "X2_0",
+                    "X2_0_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace1": {
+            "inputs": [
+                "X1_1",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_1",
+                "C_1",
+                "X2_1",
+                "X2_1_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_1",
+                    "L",
+                    "a",
+                    "b",
+                    "B_1",
+                    "C_1",
+                    "X2_1",
+                    "X2_1_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace2": {
+            "inputs": [
+                "X1_2",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_2",
+                "C_2",
+                "X2_2",
+                "X2_2_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_2",
+                    "L",
+                    "a",
+                    "b",
+                    "B_2",
+                    "C_2",
+                    "X2_2",
+                    "X2_2_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace3": {
+            "inputs": [
+                "X1_3",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_3",
+                "C_3",
+                "X2_3",
+                "X2_3_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_3",
+                    "L",
+                    "a",
+                    "b",
+                    "B_3",
+                    "C_3",
+                    "X2_3",
+                    "X2_3_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace4": {
+            "inputs": [
+                "X1_4",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_4",
+                "C_4",
+                "X2_4",
+                "X2_4_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_4",
+                    "L",
+                    "a",
+                    "b",
+                    "B_4",
+                    "C_4",
+                    "X2_4",
+                    "X2_4_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace5": {
+            "inputs": [
+                "X1_5",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_5",
+                "C_5",
+                "X2_5",
+                "X2_5_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_5",
+                    "L",
+                    "a",
+                    "b",
+                    "B_5",
+                    "C_5",
+                    "X2_5",
+                    "X2_5_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace6": {
+            "inputs": [
+                "X1_6",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_6",
+                "C_6",
+                "X2_6",
+                "X2_6_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_6",
+                    "L",
+                    "a",
+                    "b",
+                    "B_6",
+                    "C_6",
+                    "X2_6",
+                    "X2_6_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace7": {
+            "inputs": [
+                "X1_7",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_7",
+                "C_7",
+                "X2_7",
+                "X2_7_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_7",
+                    "L",
+                    "a",
+                    "b",
+                    "B_7",
+                    "C_7",
+                    "X2_7",
+                    "X2_7_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace8": {
+            "inputs": [
+                "X1_8",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_8",
+                "C_8",
+                "X2_8",
+                "X2_8_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_8",
+                    "L",
+                    "a",
+                    "b",
+                    "B_8",
+                    "C_8",
+                    "X2_8",
+                    "X2_8_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace9": {
+            "inputs": [
+                "X1_9",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_9",
+                "C_9",
+                "X2_9",
+                "X2_9_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_9",
+                    "L",
+                    "a",
+                    "b",
+                    "B_9",
+                    "C_9",
+                    "X2_9",
+                    "X2_9_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace10": {
+            "inputs": [
+                "X1_10",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_10",
+                "C_10",
+                "X2_10",
+                "X2_10_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_10",
+                    "L",
+                    "a",
+                    "b",
+                    "B_10",
+                    "C_10",
+                    "X2_10",
+                    "X2_10_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace11": {
+            "inputs": [
+                "X1_11",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_11",
+                "C_11",
+                "X2_11",
+                "X2_11_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_11",
+                    "L",
+                    "a",
+                    "b",
+                    "B_11",
+                    "C_11",
+                    "X2_11",
+                    "X2_11_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace12": {
+            "inputs": [
+                "X1_12",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_12",
+                "C_12",
+                "X2_12",
+                "X2_12_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_12",
+                    "L",
+                    "a",
+                    "b",
+                    "B_12",
+                    "C_12",
+                    "X2_12",
+                    "X2_12_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace13": {
+            "inputs": [
+                "X1_13",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_13",
+                "C_13",
+                "X2_13",
+                "X2_13_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_13",
+                    "L",
+                    "a",
+                    "b",
+                    "B_13",
+                    "C_13",
+                    "X2_13",
+                    "X2_13_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace14": {
+            "inputs": [
+                "X1_14",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_14",
+                "C_14",
+                "X2_14",
+                "X2_14_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_14",
+                    "L",
+                    "a",
+                    "b",
+                    "B_14",
+                    "C_14",
+                    "X2_14",
+                    "X2_14_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace15": {
+            "inputs": [
+                "X1_15",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_15",
+                "C_15",
+                "X2_15",
+                "X2_15_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_15",
+                    "L",
+                    "a",
+                    "b",
+                    "B_15",
+                    "C_15",
+                    "X2_15",
+                    "X2_15_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace16": {
+            "inputs": [
+                "X1_16",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_16",
+                "C_16",
+                "X2_16",
+                "X2_16_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_16",
+                    "L",
+                    "a",
+                    "b",
+                    "B_16",
+                    "C_16",
+                    "X2_16",
+                    "X2_16_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace17": {
+            "inputs": [
+                "X1_17",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_17",
+                "C_17",
+                "X2_17",
+                "X2_17_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_17",
+                    "L",
+                    "a",
+                    "b",
+                    "B_17",
+                    "C_17",
+                    "X2_17",
+                    "X2_17_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace18": {
+            "inputs": [
+                "X1_18",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_18",
+                "C_18",
+                "X2_18",
+                "X2_18_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_18",
+                    "L",
+                    "a",
+                    "b",
+                    "B_18",
+                    "C_18",
+                    "X2_18",
+                    "X2_18_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace19": {
+            "inputs": [
+                "X1_19",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_19",
+                "C_19",
+                "X2_19",
+                "X2_19_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_19",
+                    "L",
+                    "a",
+                    "b",
+                    "B_19",
+                    "C_19",
+                    "X2_19",
+                    "X2_19_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace20": {
+            "inputs": [
+                "X1_20",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_20",
+                "C_20",
+                "X2_20",
+                "X2_20_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_20",
+                    "L",
+                    "a",
+                    "b",
+                    "B_20",
+                    "C_20",
+                    "X2_20",
+                    "X2_20_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace21": {
+            "inputs": [
+                "X1_21",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_21",
+                "C_21",
+                "X2_21",
+                "X2_21_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_21",
+                    "L",
+                    "a",
+                    "b",
+                    "B_21",
+                    "C_21",
+                    "X2_21",
+                    "X2_21_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace22": {
+            "inputs": [
+                "X1_22",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_22",
+                "C_22",
+                "X2_22",
+                "X2_22_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_22",
+                    "L",
+                    "a",
+                    "b",
+                    "B_22",
+                    "C_22",
+                    "X2_22",
+                    "X2_22_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace23": {
+            "inputs": [
+                "X1_23",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_23",
+                "C_23",
+                "X2_23",
+                "X2_23_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_23",
+                    "L",
+                    "a",
+                    "b",
+                    "B_23",
+                    "C_23",
+                    "X2_23",
+                    "X2_23_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace24": {
+            "inputs": [
+                "X1_24",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_24",
+                "C_24",
+                "X2_24",
+                "X2_24_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_24",
+                    "L",
+                    "a",
+                    "b",
+                    "B_24",
+                    "C_24",
+                    "X2_24",
+                    "X2_24_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace25": {
+            "inputs": [
+                "X1_25",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_25",
+                "C_25",
+                "X2_25",
+                "X2_25_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_25",
+                    "L",
+                    "a",
+                    "b",
+                    "B_25",
+                    "C_25",
+                    "X2_25",
+                    "X2_25_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace26": {
+            "inputs": [
+                "X1_26",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_26",
+                "C_26",
+                "X2_26",
+                "X2_26_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_26",
+                    "L",
+                    "a",
+                    "b",
+                    "B_26",
+                    "C_26",
+                    "X2_26",
+                    "X2_26_size"
+                ]
+            }
+        },
+        "cu_calc_output_trace27": {
+            "inputs": [
+                "X1_27",
+                "L",
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "B_27",
+                "C_27",
+                "X2_27",
+                "X2_27_size"
+            ],
+            "module": {
+                "name": "cuda_calc_output_trace",
+                "args": [
+                    "X1_27",
+                    "L",
+                    "a",
+                    "b",
+                    "B_27",
+                    "C_27",
+                    "X2_27",
+                    "X2_27_size"
+                ]
+            }
+        },
+        "make_pc_0": {
+            "inputs": [
+                "X2_0",
+                "X2_0_size",
+                "B_0",
+                "C_0",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_0",
+                "X2PC_0_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_0",
+                    "X2_0_size",
+                    "B_0",
+                    "C_0",
+                    "L",
+                    "meta",
+                    "X2PC_0"
+                ]
+            }
+        },
+        "make_pc_1": {
+            "inputs": [
+                "X2_1",
+                "X2_1_size",
+                "B_1",
+                "C_1",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_1",
+                "X2PC_1_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_1",
+                    "X2_1_size",
+                    "B_1",
+                    "C_1",
+                    "L",
+                    "meta",
+                    "X2PC_1"
+                ]
+            }
+        },
+        "make_pc_2": {
+            "inputs": [
+                "X2_2",
+                "X2_2_size",
+                "B_2",
+                "C_2",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_2",
+                "X2PC_2_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_2",
+                    "X2_2_size",
+                    "B_2",
+                    "C_2",
+                    "L",
+                    "meta",
+                    "X2PC_2"
+                ]
+            }
+        },
+        "make_pc_3": {
+            "inputs": [
+                "X2_3",
+                "X2_3_size",
+                "B_3",
+                "C_3",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_3",
+                "X2PC_3_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_3",
+                    "X2_3_size",
+                    "B_3",
+                    "C_3",
+                    "L",
+                    "meta",
+                    "X2PC_3"
+                ]
+            }
+        },
+        "make_pc_4": {
+            "inputs": [
+                "X2_4",
+                "X2_4_size",
+                "B_4",
+                "C_4",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_4",
+                "X2PC_4_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_4",
+                    "X2_4_size",
+                    "B_4",
+                    "C_4",
+                    "L",
+                    "meta",
+                    "X2PC_4"
+                ]
+            }
+        },
+        "make_pc_5": {
+            "inputs": [
+                "X2_5",
+                "X2_5_size",
+                "B_5",
+                "C_5",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_5",
+                "X2PC_5_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_5",
+                    "X2_5_size",
+                    "B_5",
+                    "C_5",
+                    "L",
+                    "meta",
+                    "X2PC_5"
+                ]
+            }
+        },
+        "make_pc_6": {
+            "inputs": [
+                "X2_6",
+                "X2_6_size",
+                "B_6",
+                "C_6",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_6",
+                "X2PC_6_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_6",
+                    "X2_6_size",
+                    "B_6",
+                    "C_6",
+                    "L",
+                    "meta",
+                    "X2PC_6"
+                ]
+            }
+        },
+        "make_pc_7": {
+            "inputs": [
+                "X2_7",
+                "X2_7_size",
+                "B_7",
+                "C_7",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_7",
+                "X2PC_7_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_7",
+                    "X2_7_size",
+                    "B_7",
+                    "C_7",
+                    "L",
+                    "meta",
+                    "X2PC_7"
+                ]
+            }
+        },
+        "make_pc_8": {
+            "inputs": [
+                "X2_8",
+                "X2_8_size",
+                "B_8",
+                "C_8",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_8",
+                "X2PC_8_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_8",
+                    "X2_8_size",
+                    "B_8",
+                    "C_8",
+                    "L",
+                    "meta",
+                    "X2PC_8"
+                ]
+            }
+        },
+        "make_pc_9": {
+            "inputs": [
+                "X2_9",
+                "X2_9_size",
+                "B_9",
+                "C_9",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_9",
+                "X2PC_9_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_9",
+                    "X2_9_size",
+                    "B_9",
+                    "C_9",
+                    "L",
+                    "meta",
+                    "X2PC_9"
+                ]
+            }
+        },
+        "make_pc_10": {
+            "inputs": [
+                "X2_10",
+                "X2_10_size",
+                "B_10",
+                "C_10",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_10",
+                "X2PC_10_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_10",
+                    "X2_10_size",
+                    "B_10",
+                    "C_10",
+                    "L",
+                    "meta",
+                    "X2PC_10"
+                ]
+            }
+        },
+        "make_pc_11": {
+            "inputs": [
+                "X2_11",
+                "X2_11_size",
+                "B_11",
+                "C_11",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_11",
+                "X2PC_11_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_11",
+                    "X2_11_size",
+                    "B_11",
+                    "C_11",
+                    "L",
+                    "meta",
+                    "X2PC_11"
+                ]
+            }
+        },
+        "make_pc_12": {
+            "inputs": [
+                "X2_12",
+                "X2_12_size",
+                "B_12",
+                "C_12",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_12",
+                "X2PC_12_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_12",
+                    "X2_12_size",
+                    "B_12",
+                    "C_12",
+                    "L",
+                    "meta",
+                    "X2PC_12"
+                ]
+            }
+        },
+        "make_pc_13": {
+            "inputs": [
+                "X2_13",
+                "X2_13_size",
+                "B_13",
+                "C_13",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_13",
+                "X2PC_13_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_13",
+                    "X2_13_size",
+                    "B_13",
+                    "C_13",
+                    "L",
+                    "meta",
+                    "X2PC_13"
+                ]
+            }
+        },
+        "make_pc_14": {
+            "inputs": [
+                "X2_14",
+                "X2_14_size",
+                "B_14",
+                "C_14",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_14",
+                "X2PC_14_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_14",
+                    "X2_14_size",
+                    "B_14",
+                    "C_14",
+                    "L",
+                    "meta",
+                    "X2PC_14"
+                ]
+            }
+        },
+        "make_pc_15": {
+            "inputs": [
+                "X2_15",
+                "X2_15_size",
+                "B_15",
+                "C_15",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_15",
+                "X2PC_15_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_15",
+                    "X2_15_size",
+                    "B_15",
+                    "C_15",
+                    "L",
+                    "meta",
+                    "X2PC_15"
+                ]
+            }
+        },
+        "make_pc_16": {
+            "inputs": [
+                "X2_16",
+                "X2_16_size",
+                "B_16",
+                "C_16",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_16",
+                "X2PC_16_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_16",
+                    "X2_16_size",
+                    "B_16",
+                    "C_16",
+                    "L",
+                    "meta",
+                    "X2PC_16"
+                ]
+            }
+        },
+        "make_pc_17": {
+            "inputs": [
+                "X2_17",
+                "X2_17_size",
+                "B_17",
+                "C_17",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_17",
+                "X2PC_17_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_17",
+                    "X2_17_size",
+                    "B_17",
+                    "C_17",
+                    "L",
+                    "meta",
+                    "X2PC_17"
+                ]
+            }
+        },
+        "make_pc_18": {
+            "inputs": [
+                "X2_18",
+                "X2_18_size",
+                "B_18",
+                "C_18",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_18",
+                "X2PC_18_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_18",
+                    "X2_18_size",
+                    "B_18",
+                    "C_18",
+                    "L",
+                    "meta",
+                    "X2PC_18"
+                ]
+            }
+        },
+        "make_pc_19": {
+            "inputs": [
+                "X2_19",
+                "X2_19_size",
+                "B_19",
+                "C_19",
+                "L",
+                "meta",
+                "meta_size"
+            ],
+            "outputs": [
+                "X2PC_19",
+                "X2PC_19_size"
+            ],
+            "module": {
+                "name": "c_make_pc",
+                "args": [
+                    "X2_19",
+                    "X2_19_size",
+                    "B_19",
+                    "C_19",
+                    "L",
+                    "meta",
+                    "X2PC_19"
+                ]
+            }
+        },
+        "cu_make_pc_0": {
+            "inputs": [
+                "X2_0",
+                "X2_0_size",
+                "B_0",
+                "C_0",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_0",
+                "X2PC_0_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_0",
+                    "B_0",
+                    "C_0",
+                    "L",
+                    "meta",
+                    "X2PC_0",
+                    "X2PC_0_size"
+                ]
+            }
+        },
+        "cu_make_pc_1": {
+            "inputs": [
+                "X2_1",
+                "X2_1_size",
+                "B_1",
+                "C_1",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_1",
+                "X2PC_1_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_1",
+                    "B_1",
+                    "C_1",
+                    "L",
+                    "meta",
+                    "X2PC_1",
+                    "X2PC_1_size"
+                ]
+            }
+        },
+        "cu_make_pc_2": {
+            "inputs": [
+                "X2_2",
+                "X2_2_size",
+                "B_2",
+                "C_2",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_2",
+                "X2PC_2_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_2",
+                    "B_2",
+                    "C_2",
+                    "L",
+                    "meta",
+                    "X2PC_2",
+                    "X2PC_2_size"
+                ]
+            }
+        },
+        "cu_make_pc_3": {
+            "inputs": [
+                "X2_3",
+                "X2_3_size",
+                "B_3",
+                "C_3",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_3",
+                "X2PC_3_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_3",
+                    "B_3",
+                    "C_3",
+                    "L",
+                    "meta",
+                    "X2PC_3",
+                    "X2PC_3_size"
+                ]
+            }
+        },
+        "cu_make_pc_4": {
+            "inputs": [
+                "X2_4",
+                "X2_4_size",
+                "B_4",
+                "C_4",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_4",
+                "X2PC_4_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_4",
+                    "B_4",
+                    "C_4",
+                    "L",
+                    "meta",
+                    "X2PC_4",
+                    "X2PC_4_size"
+                ]
+            }
+        },
+        "cu_make_pc_5": {
+            "inputs": [
+                "X2_5",
+                "X2_5_size",
+                "B_5",
+                "C_5",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_5",
+                "X2PC_5_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_5",
+                    "B_5",
+                    "C_5",
+                    "L",
+                    "meta",
+                    "X2PC_5",
+                    "X2PC_5_size"
+                ]
+            }
+        },
+        "cu_make_pc_6": {
+            "inputs": [
+                "X2_6",
+                "X2_6_size",
+                "B_6",
+                "C_6",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_6",
+                "X2PC_6_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_6",
+                    "B_6",
+                    "C_6",
+                    "L",
+                    "meta",
+                    "X2PC_6",
+                    "X2PC_6_size"
+                ]
+            }
+        },
+        "cu_make_pc_7": {
+            "inputs": [
+                "X2_7",
+                "X2_7_size",
+                "B_7",
+                "C_7",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_7",
+                "X2PC_7_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_7",
+                    "B_7",
+                    "C_7",
+                    "L",
+                    "meta",
+                    "X2PC_7",
+                    "X2PC_7_size"
+                ]
+            }
+        },
+        "cu_make_pc_8": {
+            "inputs": [
+                "X2_8",
+                "X2_8_size",
+                "B_8",
+                "C_8",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_8",
+                "X2PC_8_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_8",
+                    "B_8",
+                    "C_8",
+                    "L",
+                    "meta",
+                    "X2PC_8",
+                    "X2PC_8_size"
+                ]
+            }
+        },
+        "cu_make_pc_9": {
+            "inputs": [
+                "X2_9",
+                "X2_9_size",
+                "B_9",
+                "C_9",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_9",
+                "X2PC_9_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_9",
+                    "B_9",
+                    "C_9",
+                    "L",
+                    "meta",
+                    "X2PC_9",
+                    "X2PC_9_size"
+                ]
+            }
+        },
+        "cu_make_pc_10": {
+            "inputs": [
+                "X2_10",
+                "X2_10_size",
+                "B_10",
+                "C_10",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_10",
+                "X2PC_10_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_10",
+                    "B_10",
+                    "C_10",
+                    "L",
+                    "meta",
+                    "X2PC_10",
+                    "X2PC_10_size"
+                ]
+            }
+        },
+        "cu_make_pc_11": {
+            "inputs": [
+                "X2_11",
+                "X2_11_size",
+                "B_11",
+                "C_11",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_11",
+                "X2PC_11_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_11",
+                    "B_11",
+                    "C_11",
+                    "L",
+                    "meta",
+                    "X2PC_11",
+                    "X2PC_11_size"
+                ]
+            }
+        },
+        "cu_make_pc_12": {
+            "inputs": [
+                "X2_12",
+                "X2_12_size",
+                "B_12",
+                "C_12",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_12",
+                "X2PC_12_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_12",
+                    "B_12",
+                    "C_12",
+                    "L",
+                    "meta",
+                    "X2PC_12",
+                    "X2PC_12_size"
+                ]
+            }
+        },
+        "cu_make_pc_13": {
+            "inputs": [
+                "X2_13",
+                "X2_13_size",
+                "B_13",
+                "C_13",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_13",
+                "X2PC_13_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_13",
+                    "B_13",
+                    "C_13",
+                    "L",
+                    "meta",
+                    "X2PC_13",
+                    "X2PC_13_size"
+                ]
+            }
+        },
+        "cu_make_pc_14": {
+            "inputs": [
+                "X2_14",
+                "X2_14_size",
+                "B_14",
+                "C_14",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_14",
+                "X2PC_14_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_14",
+                    "B_14",
+                    "C_14",
+                    "L",
+                    "meta",
+                    "X2PC_14",
+                    "X2PC_14_size"
+                ]
+            }
+        },
+        "cu_make_pc_15": {
+            "inputs": [
+                "X2_15",
+                "X2_15_size",
+                "B_15",
+                "C_15",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_15",
+                "X2PC_15_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_15",
+                    "B_15",
+                    "C_15",
+                    "L",
+                    "meta",
+                    "X2PC_15",
+                    "X2PC_15_size"
+                ]
+            }
+        },
+        "cu_make_pc_16": {
+            "inputs": [
+                "X2_16",
+                "X2_16_size",
+                "B_16",
+                "C_16",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_16",
+                "X2PC_16_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_16",
+                    "B_16",
+                    "C_16",
+                    "L",
+                    "meta",
+                    "X2PC_16",
+                    "X2PC_16_size"
+                ]
+            }
+        },
+        "cu_make_pc_17": {
+            "inputs": [
+                "X2_17",
+                "X2_17_size",
+                "B_17",
+                "C_17",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_17",
+                "X2PC_17_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_17",
+                    "B_17",
+                    "C_17",
+                    "L",
+                    "meta",
+                    "X2PC_17",
+                    "X2PC_17_size"
+                ]
+            }
+        },
+        "cu_make_pc_18": {
+            "inputs": [
+                "X2_18",
+                "X2_18_size",
+                "B_18",
+                "C_18",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_18",
+                "X2PC_18_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_18",
+                    "B_18",
+                    "C_18",
+                    "L",
+                    "meta",
+                    "X2PC_18",
+                    "X2PC_18_size"
+                ]
+            }
+        },
+        "cu_make_pc_19": {
+            "inputs": [
+                "X2_19",
+                "X2_19_size",
+                "B_19",
+                "C_19",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_19",
+                "X2PC_19_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_19",
+                    "B_19",
+                    "C_19",
+                    "L",
+                    "meta",
+                    "X2PC_19",
+                    "X2PC_19_size"
+                ]
+            }
+        },
+        "cu_make_pc_20": {
+            "inputs": [
+                "X2_20",
+                "X2_20_size",
+                "B_20",
+                "C_20",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_20",
+                "X2PC_20_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_20",
+                    "B_20",
+                    "C_20",
+                    "L",
+                    "meta",
+                    "X2PC_20",
+                    "X2PC_20_size"
+                ]
+            }
+        },
+        "cu_make_pc_21": {
+            "inputs": [
+                "X2_21",
+                "X2_21_size",
+                "B_21",
+                "C_21",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_21",
+                "X2PC_21_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_21",
+                    "B_21",
+                    "C_21",
+                    "L",
+                    "meta",
+                    "X2PC_21",
+                    "X2PC_21_size"
+                ]
+            }
+        },
+        "cu_make_pc_22": {
+            "inputs": [
+                "X2_22",
+                "X2_22_size",
+                "B_22",
+                "C_22",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_22",
+                "X2PC_22_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_22",
+                    "B_22",
+                    "C_22",
+                    "L",
+                    "meta",
+                    "X2PC_22",
+                    "X2PC_22_size"
+                ]
+            }
+        },
+        "cu_make_pc_23": {
+            "inputs": [
+                "X2_23",
+                "X2_23_size",
+                "B_23",
+                "C_23",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_23",
+                "X2PC_23_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_23",
+                    "B_23",
+                    "C_23",
+                    "L",
+                    "meta",
+                    "X2PC_23",
+                    "X2PC_23_size"
+                ]
+            }
+        },
+        "cu_make_pc_24": {
+            "inputs": [
+                "X2_24",
+                "X2_24_size",
+                "B_24",
+                "C_24",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_24",
+                "X2PC_24_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_24",
+                    "B_24",
+                    "C_24",
+                    "L",
+                    "meta",
+                    "X2PC_24",
+                    "X2PC_24_size"
+                ]
+            }
+        },
+        "cu_make_pc_25": {
+            "inputs": [
+                "X2_25",
+                "X2_25_size",
+                "B_25",
+                "C_25",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_25",
+                "X2PC_25_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_25",
+                    "B_25",
+                    "C_25",
+                    "L",
+                    "meta",
+                    "X2PC_25",
+                    "X2PC_25_size"
+                ]
+            }
+        },
+        "cu_make_pc_26": {
+            "inputs": [
+                "X2_26",
+                "X2_26_size",
+                "B_26",
+                "C_26",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_26",
+                "X2PC_26_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_26",
+                    "B_26",
+                    "C_26",
+                    "L",
+                    "meta",
+                    "X2PC_26",
+                    "X2PC_26_size"
+                ]
+            }
+        },
+        "cu_make_pc_27": {
+            "inputs": [
+                "X2_27",
+                "X2_27_size",
+                "B_27",
+                "C_27",
+                "L",
+                "meta"
+            ],
+            "outputs": [
+                "X2PC_27",
+                "X2PC_27_size"
+            ],
+            "module": {
+                "name": "cuda_make_pc",
+                "args": [
+                    "X2_27",
+                    "B_27",
+                    "C_27",
+                    "L",
+                    "meta",
+                    "X2PC_27",
+                    "X2PC_27_size"
+                ]
+            }
+        }
+    },
+    "modules": {
+        "c_parse_opora": {
+            "function": "c_parse_opora",
+            "device": "host",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "c_calc_coeff": {
+            "function": "c_calc_coeff",
+            "device": "host",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                },
+                {
+                    "type": "f32",
+                    "kind": "output"
+                }
+            ]
+        },
+        "cuda_calc_coeff": {
+            "function": "cuda_calc_coeff",
+            "device": "cuda",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                },
+                {
+                    "type": "f32",
+                    "kind": "output"
+                }
+            ]
+        },
+        "c_calc_exps": {
+            "function": "c_calc_exps",
+            "device": "host",
+            "args": [
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "cuda_calc_exps": {
+            "function": "cuda_calc_exps",
+            "device": "cuda",
+            "args": [
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "c_fft_i": {
+            "function": "c_fft_i",
+            "device": "host",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "cuda_fft_i": {
+            "function": "cuda_fft_i",
+            "device": "cuda",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "c_extract_samples": {
+            "function": "c_extract_samples",
+            "device": "host",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "cuda_extract_samples": {
+            "function": "cuda_extract_samples",
+            "device": "cuda",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "c_fft_multconj_rfft": {
+            "function": "c_fft_multconj_rfft",
+            "device": "host",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "cuda_fft_multconj_rfft": {
+            "function": "cuda_fft_multconj_rfft",
+            "device": "cuda",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "c_calc_output_trace": {
+            "function": "c_calc_output_trace",
+            "device": "host",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "f32",
+                    "kind": "output"
+                },
+                {
+                    "type": "f32",
+                    "kind": "output"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "cuda_calc_output_trace": {
+            "function": "cuda_calc_output_trace",
+            "device": "cuda",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "f32",
+                    "kind": "output"
+                },
+                {
+                    "type": "f32",
+                    "kind": "output"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "c_make_pc": {
+            "function": "c_make_pcf",
+            "device": "host",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "f32",
+                    "kind": "input"
+                },
+                {
+                    "type": "f32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        },
+        "cuda_make_pc": {
+            "function": "cuda_make_pcf",
+            "device": "cuda",
+            "args": [
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "usize",
+                    "kind": "input"
+                },
+                {
+                    "type": "f32",
+                    "kind": "input"
+                },
+                {
+                    "type": "f32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "input"
+                },
+                {
+                    "type": "pointer",
+                    "kind": "output"
+                },
+                {
+                    "type": "usize",
+                    "kind": "output"
+                }
+            ]
+        }
+    }
+}
