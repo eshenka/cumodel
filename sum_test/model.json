@@ -1,0 +1,99 @@
+{
+    "variables": {
+        "a": {
+            "type": "i32"
+        },
+        "b": {
+            "type": "i32"
+        },
+        "sum_cpu": {
+            "type": "i32"
+        },
+        "c": {
+            "type": "i32"
+        },
+        "d": {
+            "type": "i32"
+        },
+        "sum_gpu": {
+            "type": "i32"
+        }
+    },
+
+    "operations": {
+        "calculate_sum": {
+            "inputs": [
+                "a",
+                "b"
+            ],
+            "outputs": [
+                "sum_cpu"
+            ],
+            "module": {
+                "name": "c_add",
+                "args": [
+                    "a",
+                    "b",
+                    "sum_cpu"
+                ]
+            }
+        },
+        "cu_calculate_sum": {
+            "inputs": [
+                "c",
+                "d"
+            ],
+            "outputs": [
+                "sum_gpu"
+            ],
+            "module": {
+                "name": "cu_add",
+                "args": [
+                    "c",
+                    "d",
+                    "sum_gpu"
+                ]
+            }
+        }
+    },
+
+    "modules": {
+        "c_add": {
+            "function": "c_add",
+            "device": "host",
+            "args": [
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                }
+            ]
+        },
+        "cu_add": {
+            "function": "cu_add",
+            "device": "cuda",
+            "args": [
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "input"
+                },
+                {
+                    "type": "i32",
+                    "kind": "output"
+                }
+            ]
+            
+        }
+    }
+}
