@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-__global__ void cu_add(int* a, int* b, int* sum) {
+__global__ void cuda_add(int* a, int* b, int* sum) {
     *sum = *a + *b;
 }
 
